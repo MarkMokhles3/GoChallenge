@@ -22,6 +22,8 @@ class PostsViewModel: PostsViewModelProtocol {
     private var posts: [Post] = []
     private var dataSource: PostsAPIServiceProtocol
     private var router: PostsRouterProtocol
+    private var isFetching: Bool = false
+    private var pageIndex: Int = 1
 
     // MARK: - iVars
 
@@ -29,12 +31,17 @@ class PostsViewModel: PostsViewModelProtocol {
     var postsCount: Int {
         return posts.count
     }
+    var paginationTrigerIndex: Int {
+        return posts.count - 3
+    }
     
     // MARK: - Get PostsList
 
     private func getPosts() {
 
-        dataSource.getPosts { [weak self] result in
+        isFetching = true
+
+        dataSource.getPosts(pageIndex: pageIndex) { [weak self] result in
             switch result {
             case .success(let posts):
                 self?.posts.append(contentsOf: posts)
@@ -42,10 +49,17 @@ class PostsViewModel: PostsViewModelProtocol {
             case .failure(let error):
                 print(error)
             }
+            self?.isFetching = false
         }
     }
 
     func getCellModel(for index: Int) -> CellState {
+        defer {
+            if !isFetching, index >= paginationTrigerIndex {
+                pageIndex += 1
+                getPosts()
+            }
+        }
         return .compact(model: posts[index], containerViewSidesSpace: 10)
     }
 
