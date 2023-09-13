@@ -36,7 +36,21 @@
 		08FDE0D12AB087C1004AAB34 /* CellUIModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0D02AB087C1004AAB34 /* CellUIModelProtocol.swift */; };
 		08FDE0D32AB08AE9004AAB34 /* Post+UIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0D22AB08AE9004AAB34 /* Post+UIModel.swift */; };
 		08FDE0D52AB08BE4004AAB34 /* Comment+UIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0D42AB08BE4004AAB34 /* Comment+UIModel.swift */; };
+		08FDE0DD2AB1CEE5004AAB34 /* BreadfastTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0DC2AB1CEE5004AAB34 /* BreadfastTaskTests.swift */; };
+		08FDE0E52AB1D901004AAB34 /* PostsAPIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0E42AB1D901004AAB34 /* PostsAPIServiceMock.swift */; };
+		08FDE0E82AB1D960004AAB34 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0E72AB1D960004AAB34 /* MockError.swift */; };
+		08FDE0EA2AB1DBB3004AAB34 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDE0E92AB1DBB3004AAB34 /* RouterMock.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08FDE0DE2AB1CEE5004AAB34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082D19032AADB12E00D327A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 082D190A2AADB12F00D327A7;
+			remoteInfo = BreadfastTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0800E4DD2AAF2A2700BE2B65 /* PostDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -70,10 +84,22 @@
 		08FDE0D02AB087C1004AAB34 /* CellUIModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellUIModelProtocol.swift; sourceTree = "<group>"; };
 		08FDE0D22AB08AE9004AAB34 /* Post+UIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+UIModel.swift"; sourceTree = "<group>"; };
 		08FDE0D42AB08BE4004AAB34 /* Comment+UIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+UIModel.swift"; sourceTree = "<group>"; };
+		08FDE0DA2AB1CEE4004AAB34 /* BreadfastTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreadfastTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FDE0DC2AB1CEE5004AAB34 /* BreadfastTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadfastTaskTests.swift; sourceTree = "<group>"; };
+		08FDE0E42AB1D901004AAB34 /* PostsAPIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPIServiceMock.swift; sourceTree = "<group>"; };
+		08FDE0E72AB1D960004AAB34 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		08FDE0E92AB1DBB3004AAB34 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		082D19082AADB12F00D327A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FDE0D72AB1CEE4004AAB34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				082D190D2AADB12F00D327A7 /* BreadfastTask */,
+				08FDE0DB2AB1CEE5004AAB34 /* BreadfastTaskTests */,
 				082D190C2AADB12F00D327A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				082D190B2AADB12F00D327A7 /* BreadfastTask.app */,
+				08FDE0DA2AB1CEE4004AAB34 /* BreadfastTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +292,33 @@
 			path = UIModel;
 			sourceTree = "<group>";
 		};
+		08FDE0DB2AB1CEE5004AAB34 /* BreadfastTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				08FDE0DC2AB1CEE5004AAB34 /* BreadfastTaskTests.swift */,
+				08FDE0E32AB1D8E2004AAB34 /* Mocks */,
+				08FDE0E62AB1D945004AAB34 /* MockError */,
+			);
+			path = BreadfastTaskTests;
+			sourceTree = "<group>";
+		};
+		08FDE0E32AB1D8E2004AAB34 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				08FDE0E42AB1D901004AAB34 /* PostsAPIServiceMock.swift */,
+				08FDE0E92AB1DBB3004AAB34 /* RouterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		08FDE0E62AB1D945004AAB34 /* MockError */ = {
+			isa = PBXGroup;
+			children = (
+				08FDE0E72AB1D960004AAB34 /* MockError.swift */,
+			);
+			path = MockError;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +339,24 @@
 			productReference = 082D190B2AADB12F00D327A7 /* BreadfastTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		08FDE0D92AB1CEE4004AAB34 /* BreadfastTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FDE0E22AB1CEE5004AAB34 /* Build configuration list for PBXNativeTarget "BreadfastTaskTests" */;
+			buildPhases = (
+				08FDE0D62AB1CEE4004AAB34 /* Sources */,
+				08FDE0D72AB1CEE4004AAB34 /* Frameworks */,
+				08FDE0D82AB1CEE4004AAB34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08FDE0DF2AB1CEE5004AAB34 /* PBXTargetDependency */,
+			);
+			name = BreadfastTaskTests;
+			productName = BreadfastTaskTests;
+			productReference = 08FDE0DA2AB1CEE4004AAB34 /* BreadfastTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -296,6 +369,10 @@
 				TargetAttributes = {
 					082D190A2AADB12F00D327A7 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					08FDE0D92AB1CEE4004AAB34 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 082D190A2AADB12F00D327A7;
 					};
 				};
 			};
@@ -313,6 +390,7 @@
 			projectRoot = "";
 			targets = (
 				082D190A2AADB12F00D327A7 /* BreadfastTask */,
+				08FDE0D92AB1CEE4004AAB34 /* BreadfastTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +406,13 @@
 				082D19182AADB13100D327A7 /* Assets.xcassets in Resources */,
 				082D19162AADB12F00D327A7 /* Main.storyboard in Resources */,
 				083891522AAF2FB40076A4CC /* PostDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FDE0D82AB1CEE4004AAB34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +449,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08FDE0D62AB1CEE4004AAB34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FDE0E52AB1D901004AAB34 /* PostsAPIServiceMock.swift in Sources */,
+				08FDE0E82AB1D960004AAB34 /* MockError.swift in Sources */,
+				08FDE0EA2AB1DBB3004AAB34 /* RouterMock.swift in Sources */,
+				08FDE0DD2AB1CEE5004AAB34 /* BreadfastTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08FDE0DF2AB1CEE5004AAB34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 082D190A2AADB12F00D327A7 /* BreadfastTask */;
+			targetProxy = 08FDE0DE2AB1CEE5004AAB34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		082D19142AADB12F00D327A7 /* Main.storyboard */ = {
@@ -556,6 +660,50 @@
 			};
 			name = Release;
 		};
+		08FDE0E02AB1CEE5004AAB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58S3B75CL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Breadfast.BreadfastTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreadfastTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BreadfastTask";
+			};
+			name = Debug;
+		};
+		08FDE0E12AB1CEE5004AAB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58S3B75CL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Breadfast.BreadfastTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreadfastTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BreadfastTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +721,15 @@
 			buildConfigurations = (
 				082D19202AADB13100D327A7 /* Debug */,
 				082D19212AADB13100D327A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08FDE0E22AB1CEE5004AAB34 /* Build configuration list for PBXNativeTarget "BreadfastTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08FDE0E02AB1CEE5004AAB34 /* Debug */,
+				08FDE0E12AB1CEE5004AAB34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
