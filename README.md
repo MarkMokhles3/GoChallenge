@@ -4,14 +4,17 @@ GoRestApi Handler App
 
 # Note
 
-The API response doesn't contain avatars or user names. 
+The API response doesn't contain avatars or user names.
 
 # ScreenShots
 
-![Simulator Screenshot - iPhone 14 Pro - 2023-09-13 at 15 10 33](https://github.com/MarkMokhles3/GoChallenge/assets/46083535/c8073e70-796d-4da8-baeb-946d50b445c8)
-
-![Simulator Screenshot - iPhone 14 Pro - 2023-09-13 at 15 10 43](https://github.com/MarkMokhles3/GoChallenge/assets/46083535/ae698072-cdc6-4de3-ba8f-ea97e4a63b21)
-
-![Simulator Screenshot - iPhone 14 Pro - 2023-09-13 at 15 10 57](https://github.com/MarkMokhles3/GoChallenge/assets/46083535/608dc590-0b5d-45ff-b16a-72d33fdb6d7b)
-
-![Simulator Screenshot - iPhone 14 Pro - 2023-09-13 at 15 11 06](https://github.com/MarkMokhles3/GoChallenge/assets/46083535/cc50aa1a-99ca-48d4-b471-bd52249c3ef9)
+<div style="display: flex;"> 
+  <div style="flex: 25%; padding: 5px;"> 
+    <img src="https://imgtr.ee/images/2023/09/13/471c488f1d678049447eaaa85d0f3de4.png" alt="ScreenShot" width="30%"/> 
+  </div> <div style="flex: 25%; padding: 5px;">
+    <img src="https://imgtr.ee/images/2023/09/13/9fb7045cba65d2dc2930b71401d00394.png" alt="ScreenShot" width="30%"/> 
+     <div style="flex: 25%; padding: 5px;"> 
+    <img src="https://imgtr.ee/images/2023/09/13/fa8bc5082d61bed9b35156424bf79b0d.png" alt="ScreenShot" width="30%"/> 
+  </div> <div style="flex: 25%; padding: 5px;">
+    <img src="https://imgtr.ee/images/2023/09/13/9afc6bbce9f71d05d491d7b2541bfbdd.png" alt="ScreenShot" width="30%"/> 
+  </div> </div>
